@@ -7,6 +7,6 @@ resource "aws_instance" "this" {
   instance_type           = "t2.micro"
 
   tags = {
-    Name = "TF1"
+    Name = "Terraform-server"
   }
 }
