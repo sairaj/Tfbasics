@@ -6,6 +6,6 @@ resource "aws_instance" "this" {
 
 variable "sg" {}
 
-# output "ec2-details" {
-#   value = aws_instance.this.public_ip
-# }
+output "public-ip-address" {
+  value = aws_instance.this.public_ip
+}

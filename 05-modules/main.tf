@@ -8,7 +8,6 @@ module "sg" {
     # aws_details = module.ec2.
 }
 
-# printing the public ip address of the machine
-# output "server_public_ip" {
-#     value = aws_instance.this.public_ip
-# }
+variable "public-ip" {
+    value = module.ec2.public-ip-address
+}
