@@ -15,3 +15,6 @@ variable "Project" {}
 output "print-project" {
     value = "Name of the project is ${var.Project}"
 }
+
+# below one is shell variable
+# export TF_VAR_Project= airindia 
