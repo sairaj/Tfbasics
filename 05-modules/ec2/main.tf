@@ -1,5 +1,5 @@
 resource "aws_instance" "this" {
-  ami                     = "data.aws_ami.lab-image.image_id"
+  ami                     = data.aws_ami.lab-image.image_id
   instance_type           = "t2.micro"
   vpc_security_group_ids  = [var.sg]
 }

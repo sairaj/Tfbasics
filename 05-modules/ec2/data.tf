@@ -3,3 +3,4 @@ data "aws_ami" "lab-image" {
   name_regex       = "AnsibleImageSaiRajeshD"
   owners           = ["self"]
 }
+
