@@ -22,3 +22,17 @@ output "print-demo" {
 # Default variable type
 # List variable type
 # map variable type (python dictionary)
+
+variable "example-list" {
+    default = [
+        "AWS",
+        "DevOps",
+        true,
+        100
+    ]
+}
+
+output "printingList" {
+    value = "Welcome to ${var.example-list[0]} and ${var.example-list[1]} training.
+    Hours of tutorial ${var.example-list[3]}"
+}
