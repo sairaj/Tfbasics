@@ -15,7 +15,6 @@ resource "aws_instance" "this" {
       inline = [
           "ansible-pull -U https://github.com/b52-clouddevops/ansible.git -e COMPONENT=mongodb -e ENV=dev robot-pull.yml"
       ]
-    
   }
 }
 
