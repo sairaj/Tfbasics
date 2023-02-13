@@ -8,7 +8,7 @@ resource "aws_instance" "this" {
   instance_type           = "t2.micro"
 
   tags = {
-    Name = "Terraform-server"
+    Name = var.envs[count.index]
   }
 }
 
