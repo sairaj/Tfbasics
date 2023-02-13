@@ -33,6 +33,5 @@ variable "example-list" {
 }
 
 output "printingList" {
-    value = "Welcome to ${var.example-list[0]} and ${var.example-list[1]} training.
-    Hours of tutorial ${var.example-list[3]}"
+    value = "Welcome to ${var.example-list[0]} and ${var.example-list[1]} training, Hours of tutorial ${var.example-list[3]}. Final boolean: ${var.example-list[2]}"
 }
