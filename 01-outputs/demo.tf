@@ -35,3 +35,16 @@ variable "example-list" {
 output "printingList" {
     value = "Welcome to ${var.example-list[0]} and ${var.example-list[1]} training, Hours of tutorial ${var.example-list[3]}. Final boolean: ${var.example-list[2]}"
 }
+
+variable "ex-map" {
+    # type = "map"
+    default = {
+        Duration = 100,
+        Trainer = "verma",
+        Cloud = "Aws"
+    }
+}
+
+output "printingMap" {
+    value = "Welcome to ${var.ex-map["Cloud"]} Devops training. Duration of training is ${var.ex-map["Duration"]}. Trainer Name is ${var.ex-map["Trainer"]}"
+}
