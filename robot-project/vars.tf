@@ -1,5 +1,5 @@
 # map Variable
-variable "COMPONETS" {
+variable "COMPONENTS" {
     default = {
         mongodb = {
             APP_VERSION = "null"
