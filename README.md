@@ -38,7 +38,7 @@ PS : Among all, SHELL variables will have the least priority and Command line va
 ### Indentation  
 ```
 Terraform is not indentations specific like ANSIBLE.
-But for better look and feel, it's always recommended to use standard spacing ,aling all your equal signs and two spaces in any new block.
+But for better look and feel, it's always recommended to use standard spacing ,align all your equal signs and two spaces in any new block.
 ```
 
 
