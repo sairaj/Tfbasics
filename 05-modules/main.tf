@@ -5,9 +5,8 @@ module "ec2" {
 
 module "sg" {
     source = "./sg"
-    # aws_details = module.ec2.
 }
 
-variable "public-ip" {
+output "public-ip" {
     value = module.ec2.public-ip-address
 }
